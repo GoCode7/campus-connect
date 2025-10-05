@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
@@ -8,20 +9,21 @@ import { faComment} from "@fortawesome/free-solid-svg-icons";
 function Home() {
   return (
     <div className="leading-[40px]">
-      <section className="bg-[url('/images/backgound.jpg')] h-200 bg-cover justify-center items-center flex flex-col text-white text-center">
-        <div>
-          <h1 className="text-8xl font-[700] mb-5">Campus Connect</h1>
-          <p className="text-3xl w-[900px] mb-5">
+      <section className="bg-[url('/images/mask-image.webp')] h-250 w-full bg-cover justify-center items-center flex flex-col text-white text-center">
+        <div className="justify-center items-center text-center">
+          <img src="/public/images/mtu-logo.png" alt="" className="mx-auto h-45"/>
+          <h1 className="text-8xl font-[700] mb-5 [text-shadow:_10px_2px_0_#000]">Campus Connect</h1>
+          <p className="text-3xl w-[900px] mb-5 font-[700]">
             Connect with students, discover events, and make the most of your
             university experience
           </p>
-          <button className="bg-gradient-to-r from-amber-500 to-yellow-400 px-4 py-3 text-2xl rounded-2xl font-[600] mr-10">
+          <Link to="/signup" className="bg-[#CCFF33] px-4 py-3 text-2xl rounded-2xl font-[600] mr-10 hover: cursor-pointer hover:p-5 transition-all duration-300">
             Get Started{" "}
             <FontAwesomeIcon icon={faArrowRight} className="text-white" />
-          </button>
-          <button className="bg-white px-4 py-3 text-2xl text-black rounded-2xl font-[600]">
-            Sign In{" "}
-          </button>
+          </Link>
+          <Link to="/signin" className="bg-white px-4 py-3 text-2xl text-black rounded-2xl font-[600]  hover:cursor-pointer hover:p-5 transition-all duration-300">
+            Sign In
+          </Link>
         </div>
       </section>
       <section className="text-center mt-15 px-10">
@@ -33,9 +35,9 @@ function Home() {
         <div className="flex flex-row-3 justify-center mt-10 gap-10">
           <div className="p-4 shadow-lg rounded-lg">
             <div className="leading-[25px]">
-              <FontAwesomeIcon icon={faUserGroup} className="text-orange-500 text-6xl mb-10" /> 
+              <FontAwesomeIcon icon={faUserGroup} className="text-[#CCFF33] text-6xl mb-10" /> 
               <h2 className="text-2xl font-[600] mb-2">Students Groups</h2>
-            <p>
+            <p className="w-100">
               Join communities that share your interests and connect with
               like-minded students
             </p>
@@ -44,9 +46,9 @@ function Home() {
           </div>
           <div className="p-4 shadow-lg rounded-lg">
             <div className="leading-[25px]">
-               <FontAwesomeIcon icon={faCalendar} className="text-orange-500 text-6xl mb-10" />
+               <FontAwesomeIcon icon={faCalendar} className="text-[#CCFF33] text-6xl mb-10" />
               <h2 className="text-2xl font-[600] mb-2">Campus Events</h2>
-            <p>
+            < p className="w-100">
               Join communities that share your interests and connect with
               like-minded students
             </p>
@@ -55,9 +57,9 @@ function Home() {
           </div>
           <div className="p-4 shadow-lg rounded-lg">
             <div className="leading-[25px]">
-                <FontAwesomeIcon icon={faComment} className="text-orange-500 text-6xl mb-10" />
+                <FontAwesomeIcon icon={faComment} className="text-[#CCFF33] text-6xl mb-10" />
               <h2 className="text-2xl font-[600] mb-2">Stay Connected</h2>
-              <p>
+              <p className="w-100">
                 Join communities that share your interests and connect with
                 like-minded students
               </p>

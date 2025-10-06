@@ -19,8 +19,8 @@ function SignIn() {
             />
             <label className="text-left font-[600] mb-2 flex">Password</label>
             <input
-              type="email"
-              placeholder="Email Address"
+              type="Password"
+              placeholder="Password"
               className="w-full p-3 mb-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#CCFF33]"
             />
             <button

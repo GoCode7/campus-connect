@@ -24,6 +24,7 @@ function Home() {
           <Link to="/signin" className="bg-white px-4 py-3 text-2xl text-black rounded-2xl font-[600]  hover:cursor-pointer hover:p-5 transition-all duration-300">
             Sign In
           </Link>
+          <Link to='/dashboard'>dashboard</Link>
         </div>
       </section>
       <section className="text-center mt-15 px-10">

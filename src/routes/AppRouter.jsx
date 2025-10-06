@@ -3,6 +3,7 @@ import React from 'react'
 import Home from "../pages/Home";
 import Signup from "../pages/Signup";
 import SignIn from "../pages/SingIn";
+import Dashboard from "../pages/Dashboard";
 
 function AppRouter() {
   return (
@@ -11,6 +12,7 @@ function AppRouter() {
             <Route path="/" element={<Home />} />
             <Route path="/signup" element={<Signup />} />
             <Route path="/signin" element={<SignIn />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             
         </Routes>
       

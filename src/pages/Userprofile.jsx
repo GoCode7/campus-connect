@@ -24,7 +24,7 @@ function Userprofile() {
               <div className="flex flex-col gap-3">
                 <span className="flex items-center space-x-190 ">
                   <h2 className="text-[32px] font-[700]">Aluko Jesutofunmi</h2>
-                  <Link to="/" className="px-3 py-2 text-xl font-[600] bg-[#356b34] rounded-2xl "><FontAwesomeIcon icon={faPenToSquare} className="text-xl" /> Edit Profile</Link>
+                  <Link to="/editprofile" className="px-3 py-2 text-xl font-[600] bg-[#356b34] rounded-2xl "><FontAwesomeIcon icon={faPenToSquare} className="text-xl" /> Edit Profile</Link>
                 </span>
 
                 <span className="flex gap-3 text-xl font-[500] items-center text-gray-500">

@@ -6,6 +6,7 @@ import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { faCalendar } from "@fortawesome/free-solid-svg-icons";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons"; 
+import { faUserGroup } from "@fortawesome/free-solid-svg-icons";
 
 function Dashboard() {
   return (
@@ -77,21 +78,56 @@ function Dashboard() {
                     <p>
                         MTU has inaugurated a state-of-the-art research center  
                         to foster innovation and collaboration among students and faculty.
+                        <Link className="ml-4 underline font-[500]">Read more</Link>
                     </p>
                 </div>
-                <div>
+                <div className="shadow-lg p-5 rounded-lg bg-gray-100">
                     <h3 className="text-[20px] font-[600]">Student Wins National Coding Competition</h3>
                     <p>
                         Congratulations to Jane Doe for winning first place in the 
                         National Coding Competition, showcasing exceptional programming skills.
+                        <Link className="ml-4 underline font-[500]">Read more</Link>
                     </p>
                 </div>
-                <div>
+                <div className="shadow-lg p-5 rounded-lg bg-gray-100">
                     <h3 className="text-[20px] font-[600]">Annual Sports Meet Scheduled for November</h3>
                     <p>
                         Get ready for the annual sports meet this November, featuring 
                         exciting competitions and activities for all students.
+                        <Link className="ml-4 underline font-[500]">Read more</Link>
                     </p>
+                </div>
+            </div>
+          </section>
+          <section>
+            <h2  className="text-[28px] font-[600] mt-10 mb-5">Student Groups</h2>
+            <div className="mt-5 grid grid-cols-3 gap-5">
+                <div className="bg-gray-100 p-5 rounded-lg shadow-lg">
+                    <h3 className="text-2xl font-[600] mb-2">Tech Club</h3>
+                    <p> <FontAwesomeIcon icon={faUserGroup}/> 300 Members</p>
+                    <p className="text-gray-800 mb-5">
+                        Join the Tech Club to explore the latest in technology, coding, 
+                        and innovation with fellow enthusiasts.
+                    </p>
+                     <button className="px-3 py-1 bg-purple-200 text-[22px] font-[500] rounded-2xl hover:scale-120 transition-all duration-300"><Link>Join Group</Link></button>n
+                </div>
+                <div className="bg-gray-100 p-5 rounded-lg shadow-lg">
+                    <h3 className="text-2xl font-[600] mb-2">Computer Science Club</h3>
+                    <p> <FontAwesomeIcon icon={faUserGroup}/> 150 Members</p>
+                    <p className="text-gray-800 mb-5">
+                        Connect with peers, participate in coding challenges, and attend
+                        workshops with the Computer Science Club.
+                    </p>
+                      <button className="px-3 py-1 bg-purple-200 text-[22px] font-[500] rounded-2xl hover:scale-120 transition-all duration-300"><Link>Join Group</Link></button>
+                </div>
+                <div className="bg-gray-100 p-5 rounded-lg shadow-lg">
+                    <h3 className="text-2xl font-[600] mb-2">Environmental Club</h3>
+                    <p> <FontAwesomeIcon icon={faUserGroup}/> 80 Members</p>
+                    <p className="text-gray-800 mb-5">
+                        Participate in environmental conservation efforts and sustainability 
+                        projects with the Environmental Club.
+                    </p>
+                     <button className="px-3 py-1 bg-purple-200 text-[22px] font-[500] rounded-2xl hover:scale-120 transition-all duration-300"><Link>Join Group</Link></button>
                 </div>
             </div>
           </section>
